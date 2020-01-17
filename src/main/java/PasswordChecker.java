@@ -1,24 +1,29 @@
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class PasswordChecker {
+
+    private static final Logger logger = LogManager.getLogger(Main.class.getName());
 
     public void passwordIsValid(String password) {
 
         if (!exist(password)) { //checks if password does not exist
-            System.out.println("1. Password should exist");
+            logger.info("1. Password should exist");
         }
         if (!longer(password)) { //checks if password is longer that 8 characters
-            System.out.println("2. Password should be longer than 8 characters");
+            logger.info("2. Password should be longer than 8 characters");
         }
         if (!lowerCase(password)) { //checks if password has at least one lower case char
-            System.out.println("3. Password should have at least one lowercase letter");
+            logger.info("3. Password should have at least one lowercase letter");
         }
         if (!upperCase(password)) { //checks if password has a least one upper case char
-            System.out.println("4. Password should have at least one uppercase letter");
+            logger.info("4. Password should have at least one uppercase letter");
         }
         if (!digit(password)) { //checks if password has at least 1 digit
-            System.out.println("5. Password should at least have one digit");
+            logger.info("5. Password should at least have one digit");
         }
         if (!character(password)) { //checks if password has at least one special char
-            System.out.println("6. Password should have at least one special character");
+            logger.info("6. Password should have at least one special character");
         }
     }
 
@@ -49,7 +54,7 @@ public class PasswordChecker {
         }
 
         if (!(exist(password) && longer(password))) { //checks if condition 1 and 2 are met because password is never OK if conditions 1 and 2 are not met.
-            System.err.println("Password is never okay if condition 1 and 2 are not met.");
+            logger.error("Password is never okay if condition 1 and 2 are not met.");
         }
 
         return counter >= 3;

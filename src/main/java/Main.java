@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class Main {
+    private static final Logger logger = LogManager.getLogger(Main.class.getName());
 
     public static void main(String[] args) throws Exception {
 
@@ -8,7 +12,7 @@ public class Main {
 
         PasswordChecker passwordChecker = new PasswordChecker();
 
-        System.out.println("Enter your password: ");
+        logger.info("Enter your password: ");
 
         String password = scanner.nextLine();
 
