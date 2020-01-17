@@ -12,7 +12,7 @@ public class Main {
 
         PasswordChecker passwordChecker = new PasswordChecker();
 
-        logger.info("Enter your password: ");
+        System.out.println("Enter your password: ");
 
         String password = scanner.nextLine();
 
