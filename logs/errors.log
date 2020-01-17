@@ -2,3 +2,10 @@
 2020-01-17 12:17:53,177 | Main: Enter your password: 
 2020-01-17 12:18:51,227 | Main: Enter your password: 
 2020-01-17 12:20:54,018 | Main: Enter your password: 
+2020-01-17 13:25:59,468 | Main: Enter your password: 
+2020-01-17 13:27:39,931 | Main: Enter your password: 
+2020-01-17 13:37:29,305 | Main: Password is never okay if condition 1 and 2 are not met.
+2020-01-17 13:41:54,386 | Main: Enter your password: 
+2020-01-17 13:42:10,695 | Main: Password is never okay if condition 1 and 2 are not met.
+2020-01-17 13:42:10,696 | Main: 2. Password should be longer than 8 characters
+2020-01-17 13:42:10,696 | Main: 6. Password should have at least one special character
