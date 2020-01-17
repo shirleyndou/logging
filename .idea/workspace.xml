@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7fc909f-fdbd-45f6-b3fc-b6d290fef483" name="Default Changelist" comment="" />
+    <list default="true" id="d7fc909f-fdbd-45f6-b3fc-b6d290fef483" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PasswordChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PasswordChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PasswordCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PasswordCheckerTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +19,11 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1UbUsoaVKt7sEwTR5ws8p5URoGV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -66,21 +77,21 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="557" y="288" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/67.27.1299.741@67.27.1299.741" timestamp="1575625048011" />
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1575625154438">
+    <state width="1253" height="2" key="GridCell.Tab.0.bottom" timestamp="1579254864139">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1575625154438" />
-    <state width="1253" height="175" key="GridCell.Tab.0.center" timestamp="1575625154438">
+    <state width="1253" height="2" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1579254864139" />
+    <state width="1253" height="2" key="GridCell.Tab.0.center" timestamp="1579254864138">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1575625154438" />
-    <state width="1253" height="175" key="GridCell.Tab.0.left" timestamp="1575625154437">
+    <state width="1253" height="2" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1579254864138" />
+    <state width="1253" height="2" key="GridCell.Tab.0.left" timestamp="1579254864138">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1575625154437" />
-    <state width="1253" height="175" key="GridCell.Tab.0.right" timestamp="1575625154438">
+    <state width="1253" height="2" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1579254864138" />
+    <state width="1253" height="2" key="GridCell.Tab.0.right" timestamp="1579254864138">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1575625154438" />
+    <state width="1253" height="2" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1579254864138" />
   </component>
 </project>

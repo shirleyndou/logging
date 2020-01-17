@@ -1,24 +1,21 @@
-import java.util.*;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.Scanner;
 
 public class Main {
-    private static final Logger logger = LogManager.getLogger(Main.class.getName());
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
-        Scanner scan = new Scanner(System.in);
-        String password;
+        Scanner scanner = new Scanner(System.in);
 
-        PasswordChecker ps= new PasswordChecker();
+        PasswordChecker passwordChecker = new PasswordChecker();
 
-        logger.info("Enter your password: ");
+        System.out.println("Enter your password: ");
 
-        //System.out.println("Enter your password: "); //log info
-        password = scan.nextLine();
-        ps.passwordIsValid(password);
+        String password = scanner.nextLine();
+
+        System.out.println(passwordChecker.passwordIsOk(password));
+
+        passwordChecker.passwordIsValid(password);
+
+
     }
 }

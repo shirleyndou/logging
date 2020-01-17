@@ -2,65 +2,29 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/*
-* Testing whether the password has:
-* No empty string
-* No uppercase value
-* No lowercase value
-* No number in the password
-* No special character in the password
-* */
-
 class PasswordCheckerTest {
 
+    PasswordChecker passwordChecker =  new PasswordChecker();
+
     @Test
-    public void passValidLength()
-    {
-        PasswordChecker charsLength = new PasswordChecker();
-        boolean charsLength1 = charsLength.passwordIsOk("Abcde1#");
-        assertTrue(charsLength1);
+    void passwordIsValid() {
+    /*Tests if all the conditions are met*/
+        String password = "ahfghghg0000%$^&%$A";
+        boolean check = passwordChecker.exist(password) &&
+                passwordChecker.longer(password) &&
+                passwordChecker.lowerCase(password) &&
+                passwordChecker.upperCase(password) &&
+                passwordChecker.digit(password) &&
+                passwordChecker.character(password);
+        assert(check);
+
     }
 
     @Test
-    public void passwordValidEmptyTest()
-    {
-        PasswordChecker passEmpty = new PasswordChecker();
-        boolean empty = passEmpty.passwordIsOk("");
-        assertFalse(empty);
-
+    void passwordIsOk() {
+        /*Tests if at least 3 conditions are met
+        * In this case, password exists, it has a lower and upper case character*/
+        String password = "aA";
+        assert(passwordChecker.passwordIsOk(password));
     }
-
-    @Test
-    public void passwordValidUpperCaseTest()
-    {
-        PasswordChecker passUpperCase = new PasswordChecker();
-        boolean upperCase = passUpperCase.passwordIsOk("abcdefghijklmnopqrstuvwxyz");
-        assertFalse(upperCase);
-    }
-
-    @Test
-    public void passwordValidLowerCaseTest()
-    {
-        PasswordChecker passLowerCase = new PasswordChecker();
-        boolean lowerCase = passLowerCase.passwordIsOk("ABCDEFGGIJKLMNOPQRSTUVWXYZ");
-        assertFalse(lowerCase);
-    }
-
-    @Test
-    public void passwordValidNumberTest()
-    {
-        PasswordChecker passNumbers = new PasswordChecker();
-        boolean number = passNumbers.passwordIsOk("Abcdef@");
-        assertFalse(number);
-    }
-
-    @Test
-    public void passwordValidSpecialCharsTest()
-    {
-        PasswordChecker specialChars = new PasswordChecker();
-        boolean chars = specialChars.passwordIsOk("@!#$%&*");
-        assertFalse(chars);
-    }
-
-
 }
