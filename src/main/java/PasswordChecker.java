@@ -8,24 +8,25 @@ public class PasswordChecker {
     public void passwordIsValid(String password) {
 
         if (!exist(password)) { //checks if password does not exist
-            logger.info("1. Password should exist");
+            logger.error("1. Password should exist");
         }
         if (!longer(password)) { //checks if password is longer that 8 characters
-            logger.info("2. Password should be longer than 8 characters");
+            logger.error("2. Password should be longer than 8 characters");
         }
         if (!lowerCase(password)) { //checks if password has at least one lower case char
-            logger.info("3. Password should have at least one lowercase letter");
+            logger.error("3. Password should have at least one lowercase letter");
         }
         if (!upperCase(password)) { //checks if password has a least one upper case char
-            logger.info("4. Password should have at least one uppercase letter");
+            logger.error("4. Password should have at least one uppercase letter");
         }
         if (!digit(password)) { //checks if password has at least 1 digit
-            logger.info("5. Password should at least have one digit");
+            logger.error("5. Password should at least have one digit");
         }
         if (!character(password)) { //checks if password has at least one special char
-            logger.info("6. Password should have at least one special character");
+            logger.error("6. Password should have at least one special character");
         }
     }
+
 
     public boolean passwordIsOk(String password) {
         /*
@@ -55,6 +56,7 @@ public class PasswordChecker {
 
         if (!(exist(password) && longer(password))) { //checks if condition 1 and 2 are met because password is never OK if conditions 1 and 2 are not met.
             logger.debug("Password is never okay if condition 1 and 2 are not met.");
+            return false;
         }
 
         return counter >= 3;
