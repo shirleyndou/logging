@@ -54,7 +54,7 @@ public class PasswordChecker {
         }
 
         if (!(exist(password) && longer(password))) { //checks if condition 1 and 2 are met because password is never OK if conditions 1 and 2 are not met.
-            logger.error("Password is never okay if condition 1 and 2 are not met.");
+            logger.debug("Password is never okay if condition 1 and 2 are not met.");
         }
 
         return counter >= 3;
