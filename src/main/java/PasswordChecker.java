@@ -59,7 +59,12 @@ public class PasswordChecker {
             return false;
         }
 
+        if(counter >=3)
+        {
+            logger.debug("Password is Ok");
+        }
         return counter >= 3;
+
     }
 
     /*Function that passes when the password exists*/
