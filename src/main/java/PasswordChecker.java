@@ -1,3 +1,4 @@
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -61,7 +62,9 @@ public class PasswordChecker {
 
         if(counter >=3)
         {
-            logger.debug("Password is Ok");
+            System.out.println("Password is Ok");
+            //logger.debug("Password is Ok");
+
         }
         return counter >= 3;
 
